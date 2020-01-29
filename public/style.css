@@ -1,0 +1,130 @@
+.scannsButtons{
+    background-color: Transparent;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scannsButtons:active{
+    outline-color: rgba(245,176,65,1);
+}
+body {
+    
+    background-image: linear-gradient(90deg, rgba(21,67,96,1) 0%, rgba(93,173,226,1) 50%, rgba(14,159,222,1) 100%);
+
+margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+.container {
+
+	width: 90%;
+	margin: 0 auto;
+}
+
+section .container {
+    position: fixed;
+    top: 25%;
+    left: 5%;
+    width: auto;
+    height: 10%; 
+}
+
+.instructions{
+
+    /* float: right; */
+  position: fixed;
+  top: 25%;
+  left: 60%;
+  /* bring your own prefixes */
+
+
+}
+.instructions .text{
+
+  font-size: 25px;
+
+}
+
+section ul {
+  position: fixed;
+  left: 5%;
+  list-style: decimal;
+}
+
+header {
+  background-image: linear-gradient(90deg, rgba(186,74,0,1) 0%, rgba(245,176,65,1) 100%);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+
+  width: auto;
+  height: 75px;  
+}
+
+.log{
+  position: fixed;
+  top: 25%;
+  left: 40%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 30px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #31a4de;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/*   
+new background for qr and instructions  
+    linear-gradient(8deg, rgba(194,231,255,1) 0%, rgba(49,164,222,1) 40%, rgba(93,173,226,1) 60%, rgba(21,67,96,1) 100%);    
+
+background for menu
+    linear-gradient(90deg, rgba(186,74,0,1) 0%, rgba(245,176,65,1) 100%);
+
+*/

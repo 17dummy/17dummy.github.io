@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  
+  <meta charset="utf-8">
+  <title>Wooptix Barcode Extension</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+          <img class="logo" src="logo_color_fondo-transparente.png"></img>
+          <button id="butInstall" aria-label="Install" hidden></button>
+          <nav>
+            <ul>            
+              <li><a href="https://wooptix.com/" target="_blank">Contact</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.wooptix.barcodescanner&gl=ES" target="_blank">Download App</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <section id="server">
+        <!-- <h1 id="serverName" >Wooptix Barcode Extension</h1> -->
+        <ul id="serverlog", class="log", style="position: absolute; overflow: auto; height:60%; width:50%;"></ul>
+              <div class="container" id="canvas" ></div> 
+              <div  id="hide-when-connected">
+                  <div class = "instructions">
+                      <p class = "text">   To Scan it :</p>
+                      <p class = "text">1.- Open Wooptix Barcode Scanner on your phone</p>
+                      <p class = "text">2.- Scan the QR through Any Code or Qr</p>
+                  </div>
+              </div>
+  </section>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="qrcode.min.js"></script>
+  <script src="index.js"></script>
+  <script src="./scripts/install.js"></script>
+</body>
+</html>
